@@ -5,7 +5,9 @@ from pathlib import Path
 
 def main():
     """Run the Streamlit application."""
-    app_path = Path(r"D:\RAG-Bot\AskDocs\src\app\main.py")
+    # Use relative path from the script location
+    current_dir = Path(__file__).parent
+    app_path = current_dir / "src" / "app" / "main.py"
     if not app_path.exists():
         print(f"Error: Could not find {app_path}")
         sys.exit(1)
