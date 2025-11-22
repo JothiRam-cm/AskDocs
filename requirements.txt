@@ -2,7 +2,6 @@ ollama==0.6.1
 streamlit==1.51.0
 pdfplumber==0.11.8
 
-# --- LangChain New Ecosystem ---
 langchain==0.2.12
 langchain-core==0.2.36
 langchain-community==0.2.6
